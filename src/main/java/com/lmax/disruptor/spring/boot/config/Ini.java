@@ -1,22 +1,12 @@
 package com.lmax.disruptor.spring.boot.config;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.UnsupportedEncodingException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
-
+import com.lmax.disruptor.spring.boot.exception.EventHandleException;
+import com.lmax.disruptor.spring.boot.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.lmax.disruptor.spring.boot.exception.EventHandleException;
-import com.lmax.disruptor.spring.boot.util.StringUtils;
+import java.io.*;
+import java.util.*;
 
 public class Ini implements Map<String, Ini.Section> {
 

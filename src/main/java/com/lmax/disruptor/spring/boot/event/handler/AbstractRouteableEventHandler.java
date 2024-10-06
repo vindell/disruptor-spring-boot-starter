@@ -1,14 +1,13 @@
 package com.lmax.disruptor.spring.boot.event.handler;
 
-import java.io.IOException;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.lmax.disruptor.spring.boot.event.DisruptorEvent;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChain;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChainResolver;
 import com.lmax.disruptor.spring.boot.exception.EventHandleException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
 
 public class AbstractRouteableEventHandler<T extends DisruptorEvent> extends AbstractEnabledEventHandler<T> {
 

@@ -1,14 +1,5 @@
 package com.lmax.disruptor.spring.boot.event.handler.chain.def;
 
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.util.CollectionUtils;
-
 import com.lmax.disruptor.spring.boot.event.DisruptorEvent;
 import com.lmax.disruptor.spring.boot.event.handler.DisruptorHandler;
 import com.lmax.disruptor.spring.boot.event.handler.Nameable;
@@ -16,6 +7,14 @@ import com.lmax.disruptor.spring.boot.event.handler.NamedHandlerList;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChain;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChainManager;
 import com.lmax.disruptor.spring.boot.util.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.CollectionUtils;
+
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class DefaultHandlerChainManager implements HandlerChainManager<DisruptorEvent> {
 	

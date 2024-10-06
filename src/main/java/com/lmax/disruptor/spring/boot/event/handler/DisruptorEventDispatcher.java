@@ -1,12 +1,11 @@
 package com.lmax.disruptor.spring.boot.event.handler;
 
-import org.springframework.core.Ordered;
-
 import com.lmax.disruptor.EventHandler;
 import com.lmax.disruptor.spring.boot.event.DisruptorEvent;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChain;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChainResolver;
 import com.lmax.disruptor.spring.boot.event.handler.chain.ProxiedHandlerChain;
+import org.springframework.core.Ordered;
 
 /**
  * Disruptor 事件分发实现

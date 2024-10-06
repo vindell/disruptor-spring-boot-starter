@@ -16,13 +16,12 @@
 package com.lmax.disruptor.spring.boot.context.event;
 
 
-import java.lang.reflect.Constructor;
-
+import com.lmax.disruptor.spring.boot.event.DisruptorEvent;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.beans.factory.InitializingBean;
 
-import com.lmax.disruptor.spring.boot.event.DisruptorEvent;
+import java.lang.reflect.Constructor;
 
 public class EventPublicationInterceptor
 		implements MethodInterceptor, DisruptorEventPublisherAware, InitializingBean {

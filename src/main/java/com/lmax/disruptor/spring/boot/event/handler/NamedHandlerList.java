@@ -1,9 +1,9 @@
 package com.lmax.disruptor.spring.boot.event.handler;
 
-import java.util.List;
-
 import com.lmax.disruptor.spring.boot.event.DisruptorEvent;
 import com.lmax.disruptor.spring.boot.event.handler.chain.HandlerChain;
+
+import java.util.List;
 
 
 public interface NamedHandlerList<T extends DisruptorEvent> extends List<DisruptorHandler<T>> {
